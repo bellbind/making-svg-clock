@@ -1,5 +1,7 @@
 # Making analog clock as a single SVG file with JavaScript
 
+- repository: [@bellbind/making-svg-clock](https://github.com/bellbind/making-svg-clock)
+
 ## 0. Basic shapes in center oriented SVG file
 
 - [00-svg-shapes.svg](00-svg-shapes.svg)
@@ -7,12 +9,16 @@
 1. Create a SVG file with center coord is (0, 0).
 2. Draw `<rect>`, `<circle>`, and centering `<text>` in the SVG .
 
+<object data="00-svg-shapes.svg"></object>
+
 ## 1. Transform basic
 
 - [01-transform.svg](01-transform.svg)
 
 1. Rotate `<rect>` with `transform` attribute with `rotate(angle,cx=0,cy=0)` value.
 2. Rotate non tilt `<text>` with 1. `rotate(-a)`, 2. `translate(dx,dy)`, 3. `angle(a)` (NOTE: right-side first in SVG `transform`).
+
+<object data="01-transform.svg"></object>
 
 ## 2. JavaScript enabled SVG
 
@@ -25,6 +31,8 @@
 4. Export JavaScript API for the SVG with members of `globalThis` == `contentWindow`.
 5. Access inside SVG with `objectElement.contentWindow` from HTML.
 
+<object data="02-javascript.svg"></object>
+
 ## 3. Basic analog clock
 
 - [03-basic-analog-clock.svg](03-basic-analog-clock.svg)
@@ -34,11 +42,15 @@
 3. Use `Date` object for get current Hours/Minutes/Seconds.
 4. Compoute and set angle of each hands.
 
+<object data="03-basic-analog-clock.svg"></object>
+
 ## 4. Decorated frame of the clock
 
 - [04-deco-frame-clock.svg](04-deco-frame-clock.svg)
 
 1. Put several types of notches for each minutes.
+
+<object data="04-deco-frame-clock.svg"></object>
 
 ## 5. Round of 12-hours digits
 
@@ -46,11 +58,15 @@
 
 1. Add 12 digits for hours.
 
+<object data="05-12digits-clock.svg"></object>
+
 ## 6. Shadow of hands
 
 - [06-shadow-hands-clock.svg](06-shadow-hands-clock.svg)
 
 1. Add drop shadow of each hand with cross platform ways (use `<feDropShadow>`).
+
+<object data="06-shadow-hands-clock.svg"></object>
 
 ## 7. Round alignment logo 
 
@@ -58,12 +74,16 @@
 
 1. Add a logo `<text>` with `<textPath>` on arc.
 
+<object data="07-logo-clock.svg"></object>
+
 ## 8. Digital panel
 
 - [08-digital-panel-clock.svg](08-digital-panel-clock.svg)
 
 1. Add a digital area `<rect>` and placeholder `<text>`s.
 2. Update digital texts in JavaScript.
+
+<object data="08-digital-panel-clock.svg"></object>
 
 ## 9. Decorated texts with Web font
 
@@ -73,12 +93,16 @@
 2. Load web fonts with `@import` style in `<style>` in SVG .
 3. Apply webfonts at each `font-family`.
 
+<object data="09-webfont-clock.svg"></object>
+
 ## 10. Inset shadow of digital panel
 
 - [10-inset-shadow-clock.svg](10-inset-shadow-clock.svg)
 
 1. Make tricky `<filter>` for inset shadow with several steps.
 2. Insert a frame `<rect>` for generating inset shadow.
+
+<object data="10-inset-shadow-clock.svg"></object>
 
 ## 11. Tick sound
 
@@ -89,13 +113,17 @@
 3. Create tick sound with [`GainNode`](https://www.w3.org/TR/webaudio/#gainnode) and [BiquadFilterNode](https://www.w3.org/TR/webaudio/#biquadfilternode) tricks.
 4. Play tick sounds within `requestAnimationFrame` loop.
 
-# 12. Controllable Clock from HTML
+<object data="11-tick-sound-clock.svg"></object>
+
+## 12. Controllable Clock from HTML
 
 - [12-controllable-clock.svg](12-controllable-clock.svg)
 - [12-control-clock.html](12-control-clock.html)
 
-1. Export several features via adding object into `globalThis`.
+1. Export several features via adding object with methods into `globalThis`.
 2. Make some example UI with HTML.
+
+<object data="12-control-clock.html" width="340" height="400"></object>
 
 ## 99. SVG Analog Clock as SPA app
 
@@ -106,3 +134,5 @@
 1. Create fullscreen style HTML with `<object>` tag.
 2. Create webmanifest `manifest.json` for the HTML.
 3. Add `<link rel="manifest" href="...">` in the HTML.
+
+<object data="99-spa-clock.html" width="320" height="480"></object>
