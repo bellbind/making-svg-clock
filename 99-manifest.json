@@ -1,0 +1,16 @@
+{
+  "short_name": "SVG Clock",
+  "name": "SVG Analog Clock",
+  "icons": [
+    {
+      "src": "./99-clock.svg",
+      "type": "image/svg+xml",
+      "sizes": "320x320"
+    }
+  ],
+  "start_url": "./99-spa-clock.html",
+  "theme_color": "#334444",
+  "background_color": "#334444",
+  "display": "standalone",
+  "display_override": ["fullscreen", "minimal-ui", "window-controls-overlay", "browser"]
+}

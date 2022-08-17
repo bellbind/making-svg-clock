@@ -1,0 +1,11 @@
+<!-- set center as (0, 0) by `viewBox="top left width height"` -->
+<svg xmlns="http://www.w3.org/2000/svg" width="320px" height="320px" viewBox="-160 -160 320 320">
+  <!-- rounded rect frame: rect with rx/ry and fill="none" -->
+  <rect x="-150" y="-150" width="300" height="300" rx="10" ry="10"  fill="none" stroke="black" stroke-width="10" />
+
+  <!-- filled circle (NOTE: `currentcolor` and `transfarent` is HTML special colors) -->
+  <circle cx="0" cy="0" r="10" fill="currentcolor" />
+
+  <!-- `text` with centering -->
+  <text x="0" y="50" dy="0.35em" text-anchor="middle" font-size="30" font-family="cursive" fill="#1177ee">1234</text>
+</svg>

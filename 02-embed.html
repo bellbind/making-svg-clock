@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <h2>Embedding SVG with IMG tag (script disabled)</h2>
+    <div>
+      <img src="./02-javascript.svg" />
+      <p>
+        (NOTE: IMG also cannot use several features; e.g. `@import` Web font url at &lt;style&gt; in SVG files)
+      </p>
+    </div>
+    <hr />
+    <h2>Embedding SVG with OBJECT tag (script enabled)</h2>
+    <div>
+      <object data="./02-javascript.svg"></object>
+      <p>
+        (NOTE: script enabled when not limited by Content-Security-Policy)
+      </p>
+    </div>
+    <hr />
+    <h2>Accessing SVG with OBJECT tag from HTML</h2>
+    <div>
+      <object id="svg-object" data="./02-javascript.svg"></object>
+      <button onclick='document.getElementById("svg-object").contentWindow.toggleAnimation()'>toggle</button>
+      <p>
+        (NOTE: Accessing `HTMLObjectElement.contentWindow` is not allowed when `file:` protocol)
+      </p>
+    </div>
+  </body>
+</html>

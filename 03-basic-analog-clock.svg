@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320px" height="320px" viewBox="-160 -160 320 320">
+  <!-- panel -->
+  <circle r="150" fill="#eae1cf" stroke="black" stroke-width="10" />
+
+  <!-- hands -->
+  <rect id="hour" x="-5" y="-100" width="10" height="105" rx="5" ry="5" />
+  <rect id="minute" x="-2" y="-130" width="4" height="132" rx="2" ry="2" />
+  <rect id="second" x="-1" y="-140" width="2" height="160" rx="1" ry="1" fill="#6c272d" />
+  <circle r="3" fill="#6c272d" />
+
+  <!-- JavaScript code in CDATA section -->
+  <script><![CDATA[
+const svg = document.documentElement;
+
+const hHand = document.getElementById("hour");
+const mHand = document.getElementById("minute");
+const sHand = document.getElementById("second");
+
+const hRotate = svg.createSVGTransform();
+const mRotate = svg.createSVGTransform();
+const sRotate = svg.createSVGTransform();
+
+hHand.transform.baseVal.appendItem(hRotate);
+mHand.transform.baseVal.appendItem(mRotate);
+sHand.transform.baseVal.appendItem(sRotate);
+
+const setTime = date => {
+  const sSec = date.getSeconds();
+  const mSec = date.getMinutes() * 60 + sSec;
+  const hSec = (date.getHours() % 12) * 60 * 60 + mSec;
+  
+  const sAngle = sSec * (360 / 60);
+  const mAngle = mSec * (360 / (60 * 60));
+  const hAngle = hSec * (360 / (12 * 60 * 60));
+
+  hRotate.setRotate(hAngle, 0, 0);
+  mRotate.setRotate(mAngle, 0, 0);
+  sRotate.setRotate(sAngle, 0, 0);
+};
+
+// animate
+let running = true;
+const loop = () => {
+  if (running) {
+    const now = new Date();
+    setTime(now);
+  }
+  requestAnimationFrame(loop);
+};
+loop();
+
+// export functions into HTMLObjectElement.contentWindow
+globalThis.toggleAnimation = () => {
+  running = !running;
+};
+  ]]></script>
+</svg>

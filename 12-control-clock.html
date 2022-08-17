@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <object id="svg-object" data="./12-controllable-clock.svg"></object>
+    <div>
+      <div>
+        <input type="date" /> <input type="time" step="1" />
+        <button onclick='const date = document.querySelector("input[type=date]").value;
+                         const time = document.querySelector("input[type=time]").value;
+                         if (date) document.querySelector("#svg-object").contentWindow.clock.setDate(new Date(`${date} ${time}`));
+                         '>show</button>
+      </div>
+      <div>
+        <button onclick='document.querySelector("#svg-object").contentWindow.clock.restart();'>reset time</button>
+        <button onclick='const clock = document.querySelector("#svg-object").contentWindow.clock;
+                         if (clock.digitalVisible) {clock.digitalHide();} else {clock.digitalShow();}
+                         '>toggle digital</button>
+      </div>
+    </div>
+  </body>
+</html>

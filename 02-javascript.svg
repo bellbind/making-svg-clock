@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320px" height="320px" viewBox="-160 -160 320 320">
+  <!-- set `id` for `document.getElementById(id)`-->
+  <rect id="hand" x="-2" y="-120" width="4" height="140" rx="2" ry="2" fill="crimson" />
+  <circle r="5" fill="crimson" />
+
+  <!-- JavaScript code in CDATA section -->
+  <script><![CDATA[
+// `svg` element as a factory-object for SVG related objects
+const svg = document.documentElement;
+
+// rotating rect with a SVGTransform object
+const hand = document.getElementById("hand");
+const rotate = svg.createSVGTransform();
+hand.transform.baseVal.appendItem(rotate);
+
+// SVG can use any `window` features like HTML docs: e.g. `requestAnimationFrame`
+let running = true;
+const loop = () => {
+  if (running) {
+    const angle = (Date.now() / 1000) % 60 * 6; // 60-sec  as 360-degree
+    //NOTE: no default params: `SVGTransform.setRotate(angle, cx, cy)`
+    rotate.setRotate(angle, 0, 0);
+  }
+  requestAnimationFrame(loop);
+};
+loop();
+
+// export functions into HTMLObjectElement.contentWindow
+globalThis.toggleAnimation = () => {
+  running = !running;
+};
+  ]]></script>
+</svg>

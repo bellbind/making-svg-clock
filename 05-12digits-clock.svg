@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320px" height="320px" viewBox="-160 -160 320 320">
+  <!-- panel -->
+  <circle r="150" fill="#eae1cf" stroke="black" stroke-width="10" />
+
+  <!-- longer bar at top -->
+  <rect x="-5" y="-150" width="10" height="15" />
+
+  <!-- bars at each hour -->
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(30)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(60)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(90)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(120)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(150)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(180)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(210)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(240)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(270)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(300)" />
+  <rect x="-5" y="-150" width="10" height="10" transform="rotate(330)" />
+
+  <!-- pins at each minutes -->
+  <circle cx="0" cy="-142" r="2" transform="rotate(6)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(12)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(18)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(24)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(36)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(42)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(48)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(54)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(66)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(72)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(78)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(84)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(96)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(102)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(108)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(114)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(126)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(132)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(138)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(144)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(156)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(162)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(168)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(174)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(186)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(192)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(198)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(204)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(216)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(222)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(228)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(234)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(246)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(252)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(258)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(264)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(276)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(282)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(288)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(294)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(306)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(312)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(318)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(324)" />
+
+  <circle cx="0" cy="-142" r="2" transform="rotate(336)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(342)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(348)" />
+  <circle cx="0" cy="-142" r="2" transform="rotate(354)" />
+
+  <!-- numbers -->
+  <g id="numbers" font-size="30" font-family="cursive" text-anchor="middle">
+    <text dy="0.35em" transform="translate(0 -120)">12</text>
+    <text dy="0.35em" transform="rotate(30),translate(0,-120),rotate(-30)">1</text>
+    <text dy="0.35em" transform="rotate(60),translate(0,-120),rotate(-60)">2</text>
+    <text dy="0.35em" transform="rotate(90),translate(0,-120),rotate(-90)">3</text>
+    <text dy="0.35em" transform="rotate(120),translate(0,-120),rotate(-120)">4</text>
+    <text dy="0.35em" transform="rotate(150),translate(0,-120),rotate(-150)">5</text>
+    <text dy="0.35em" transform="rotate(180),translate(0,-120),rotate(-180)">6</text>
+    <text dy="0.35em" transform="rotate(210),translate(0,-120),rotate(-210)">7</text>
+    <text dy="0.35em" transform="rotate(240),translate(0,-120),rotate(-240)">8</text>
+    <text dy="0.35em" transform="rotate(270),translate(0,-120),rotate(-270)">9</text>
+    <text dy="0.35em" transform="rotate(300),translate(0,-120),rotate(-300)">10</text>
+    <text dy="0.35em" transform="rotate(330),translate(0,-120),rotate(-330)">11</text>
+  </g>
+
+  <!-- hands -->
+  <rect id="hour" x="-5" y="-100" width="10" height="105" rx="5" ry="5" />
+  <rect id="minute" x="-2" y="-130" width="4" height="132" rx="2" ry="2" />
+  <rect id="second" x="-1" y="-140" width="2" height="160" rx="1" ry="1" fill="#6c272d" />
+  <circle r="3" fill="#6c272d" />
+
+  <!-- JavaScript code in CDATA section -->
+  <script><![CDATA[
+const svg = document.documentElement;
+
+const hHand = document.getElementById("hour");
+const mHand = document.getElementById("minute");
+const sHand = document.getElementById("second");
+
+const hRotate = svg.createSVGTransform();
+const mRotate = svg.createSVGTransform();
+const sRotate = svg.createSVGTransform();
+
+hHand.transform.baseVal.appendItem(hRotate);
+mHand.transform.baseVal.appendItem(mRotate);
+sHand.transform.baseVal.appendItem(sRotate);
+
+const setTime = date => {
+  const sSec = date.getSeconds();
+  const mSec = date.getMinutes() * 60 + sSec;
+  const hSec = (date.getHours() % 12) * 60 * 60 + mSec;
+  
+  const sAngle = sSec * (360 / 60);
+  const mAngle = mSec * (360 / (60 * 60));
+  const hAngle = hSec * (360 / (12 * 60 * 60));
+
+  hRotate.setRotate(hAngle, 0, 0);
+  mRotate.setRotate(mAngle, 0, 0);
+  sRotate.setRotate(sAngle, 0, 0);
+};
+
+// animate
+let running = true;
+const loop = () => {
+  if (running) {
+    const now = new Date();
+    setTime(now);
+  }
+  requestAnimationFrame(loop);
+};
+loop();
+
+// export functions into HTMLObjectElement.contentWindow
+globalThis.toggleAnimation = () => {
+  running = !running;
+};
+  ]]></script>
+</svg>
