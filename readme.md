@@ -24,7 +24,7 @@ Step-by-step guide to make and use a analog clock app as a [SVG](https://www.w3.
 - [01-transform.svg](01-transform.svg)
 
 1. Rotate `<rect>` with [`transform`](https://www.w3.org/TR/SVG11/single-page.html#coords-TransformAttribute) attribute with `rotate(angle,cx=0,cy=0)` value.
-2. Rotate non tilt `<text>` with 1. `rotate(-a)`, 2. `translate(dx,dy)`, 3. `angle(a)` (NOTE: right-side first in each SVG `transform` list).
+2. Rotate non tilt `<text>` as 1. `rotate(-a)`, 2. `translate(dx,dy)`, 3. `rotate(a)` (NOTE: right-side first in each SVG `transform` list).
 
 <object data="01-transform.svg"></object>
 
@@ -82,7 +82,7 @@ Step-by-step guide to make and use a analog clock app as a [SVG](https://www.w3.
 
 - [06-shadow-hands-clock.svg](06-shadow-hands-clock.svg)
 
-1. Add drop shadow of each hand with cross platform ways (use [`<feDropShadow>`](https://drafts.fxtf.org/filter-effects/#feDropShadowElement)).
+1. Add drop shadow of each hand with cross platform ways (use [`<feDropShadow>`](https://drafts.fxtf.org/filter-effects/#feDropShadowElement) instead of [`filter: drop-shadow()`](https://drafts.fxtf.org/filter-effects/#funcdef-filter-drop-shadow) function).
 
 <object data="06-shadow-hands-clock.svg"></object>
 
@@ -137,9 +137,9 @@ Step-by-step guide to make and use a analog clock app as a [SVG](https://www.w3.
 - [11-tick-sound-clock.svg](11-tick-sound-clock.svg)
 
 1. Play sounds with [Web Audio API](https://www.w3.org/TR/webaudio/).
-2. Make [`AudioContext`](https://www.w3.org/TR/webaudio/#AudioContext) object after some user inputs (in "click" event).
+2. Should make a [`AudioContext`](https://www.w3.org/TR/webaudio/#AudioContext) object after some user inputs; e.g. `"click"` event.
 3. Create tick sound with [`GainNode`](https://www.w3.org/TR/webaudio/#gainnode) and [BiquadFilterNode](https://www.w3.org/TR/webaudio/#biquadfilternode) tricks.
-4. Play tick sounds within `requestAnimationFrame` loop.
+4. Play tick sounds within `requestAnimationFrame` loop after seconds changed.
 
 <object data="11-tick-sound-clock.svg"></object>
 
